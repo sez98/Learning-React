@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Item from './cvitem';
+
 // function getYear() {
 //     var date = new Date();
 //     return date.getFullYear();
@@ -14,6 +16,7 @@ class Header extends Component{
                     <h2>Resume/CV</h2>
                     {/* <h5>Last Updated in the Year {getYear()}</h5> */}
                 </div>
+                <Item />
             </>
         );
     }
