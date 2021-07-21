@@ -1,21 +1,37 @@
 import React, { Component } from 'react';
 
 class Item extends Component{
-  render(){
-      return (
-          <>
-              <div className="lastupdated">
-                  <h5>Last Updated in the Year </h5>
-              </div>
-          </>
-      );
-  }
+    
+    getYear() {
+        var date = new Date();
+        return date.getFullYear();
+    }
+
+    // getInputHandler(event) {
+    //     console.log(event.target.value);
+    // }
+
+    getInputHandler(event, name) {
+        console.log(event.target.value);
+        console.log(name);
+    }
+
+    render(){
+        return (
+            <h4
+                onClick = {   () => console.log('I was clicked')    }
+            >
+                <div className="lastupdated">
+                    <h5>Last Updated in the Year  {this.getYear()}</h5>
+                </div>
+                {/* <input onChange= {this.getInputHandler} />  */}
+                <input onChange= {(eve) => this.getInputHandler(eve,'sezal')} />
+            </h4>
+        );
+    }
 }
 
 export default Item;
 
 
-// const getYear() { {getYear()}
-//          var date = new Date();
-//          return date.getFullYear();
-//        }
+//<input onChange= { () => console.log('blah')} / >
