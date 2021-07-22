@@ -11,9 +11,14 @@ class Item extends Component{
     //     console.log(event.target.value);
     // }
 
-    getInputHandler(event, name) {
+    functionCallingfunction = (event) => {
+        this.getInputHandler(event);
+        console.log('Function call successful');
+
+    }
+
+    getInputHandler(event) {
         console.log(event.target.value);
-        console.log(name);
     }
 
     render(){
@@ -25,7 +30,8 @@ class Item extends Component{
                     <h5>Last Updated in the Year  {this.getYear()}</h5>
                 </div>
                 {/* <input onChange= {this.getInputHandler} />  */}
-                <input onChange= {(eve) => this.getInputHandler(eve,'sezal')} />
+                {/* <input onChange= {(eve) => this.getInputHandler(eve,'sezal')} /> */}
+                <input onChange= {this.functionCallingfunction} />
             </h4>
         );
     }
