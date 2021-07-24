@@ -1,11 +1,17 @@
-import logo from './logo.svg';
 import React, { Component } from 'react';
 
 import Header from './components/header';
+import ItemList from './components/itemlist';
+import DB from './db.json';
 
 import './styles/App.css';
 
+//data can be passed between components back and forth using props
 class App extends Component {
+  state = {
+    DB1: DB
+  }
+
   render() {
     return (
       <>
@@ -13,6 +19,9 @@ class App extends Component {
           <h1>Welcome to the First Webpage!</h1>
         </div>
         <Header />
+        <ItemList
+          DB1= {this.state.DB1}
+        />
       </>
     );
   }
