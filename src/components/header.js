@@ -9,11 +9,11 @@ class Header extends Component{
     render(){        
         return (
             <>
-                <div className="header">
+                <header className="header">
                     <h1>Sezal Chug</h1>
                     <h2>Resume/CV</h2>
                     <h5>Last Updated in the Year {this.getYear()}</h5>
-                </div>
+                </header>
             </>
         );
     }
