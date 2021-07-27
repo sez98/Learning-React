@@ -18,6 +18,11 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     text-align: center;
 }
 
+.filledHeader{
+    background-color: lightgreen;
+    text-align: center;   
+}
+
 .welcomenote{
     color: green;
     background-color: honeydew;
