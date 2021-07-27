@@ -21,9 +21,9 @@ class App extends Component {
           <h1>Welcome to the First Webpage!</h1>
         </div>
         <Header />
-        <ItemList
-          DB1= {this.state.DB1}
-        />
+        <ItemList DB1= {this.state.DB1}> 
+          News List 
+        </ItemList>
         <Footer Author= {this.state.author}
         />
       </>

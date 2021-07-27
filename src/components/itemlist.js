@@ -12,7 +12,9 @@ const ItemList = (props) => {
          return(
                   <>
                            <div>Welcome to the Items of the CV</div>
+                           <h2>{props.children}</h2>
                            { itemsDB }
+                           
                   </>
          )
 }
