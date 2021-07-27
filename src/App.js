@@ -9,10 +9,26 @@ import './styles/App.css';
 
 //data can be passed between components back and forth using props
 class App extends Component {
+
   state = {
     DB1: DB,
-    Author: "Sezal Chug"
+    FilteredDB1: DB,
+    Author: "Sezal Chug",
+    keywords: ''
   }
+
+  inputHandler= (event) => {
+    let words = event.target.value;
+    let filtered = this.state.DB1.filter((item) => {
+      return item.title.indexOf(words) > -1;
+    });
+
+    // console.log(filtered);
+    this.setState({
+      FilteredDB1: filtered
+    })
+  }
+
 
   render() {
     return (
@@ -20,8 +36,8 @@ class App extends Component {
         <div className="welcomenote">
           <h1>Welcome to the First Webpage!</h1>
         </div>
-        <Header />
-        <ItemList DB1= {this.state.DB1}> 
+        <Header inputfunctionCall= {this.inputHandler}/>
+        <ItemList DB1= {this.state.FilteredDB1}> 
           News List 
         </ItemList>
         <Footer Author= {this.state.author}
