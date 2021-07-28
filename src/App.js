@@ -4,6 +4,8 @@ import Header from './components/header';
 import Footer from './components/footer'
 import Lifecycle from './components/lifecycle'
 import ItemList from './components/itemlist';
+import Hooks from './components/hooks'
+
 import DB from './db.json';
 
 import './styles/App.css';
@@ -35,15 +37,22 @@ class App extends Component {
   render() {
     return (
       <>
+{/* Welcome Bar  */}
         <div className="welcomenote">
           <h1>Welcome to the First Webpage!</h1>
         </div>
+
+{/* Header Bar */}
         {/* <Header inputfunctionCall= {this.inputHandler}/> */}
+
+{/* CV Item List */}
         {/* <ItemList DB1= {this.state.FilteredDB1}> 
           News List 
         </ItemList> */}
 
-        <button
+
+{/* LIFECYCLE */}
+        {/* <button
           onClick = {() => this.setState({
             lifecycle: !this.state.lifecycle
           })}
@@ -51,10 +60,13 @@ class App extends Component {
           SHOW LIFECYCLE
         </button>
 
-        {this.state.lifecycle ? <Lifecycle /> : null}
+        {this.state.lifecycle ? <Lifecycle /> : null} */}
+
+{/* Hooks Example */}
+        <Hooks initialCount={0} DB1= {this.state.DB1}/>
 
 
-
+{/* Footer Bar */}
         <Footer Author= {this.state.Author}
         />
       </>

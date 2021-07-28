@@ -9,6 +9,8 @@ const Header = (props) => {
                 <h1>Sezal Chug</h1>
                 <h2>Resume/CV</h2>
             </header>
+            
+{/* Filter Input Box */}
             <div>
                 Filter Box- 
                 <input onChange= {props.inputfunctionCall}/>
