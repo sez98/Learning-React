@@ -8,7 +8,7 @@ class Footer extends Component{
             <>
                 <footer>
                     <h2>This is the Footer</h2>
-                    <h3>The author of the Website is {this.props.author}</h3>
+                    <h3>The author of the Website is {this.props.Author}</h3>
                 </footer>
             </>
         );

@@ -1,22 +1,44 @@
-[
-    {
-        "id": 1,
-        "title": "New ES6 upgrade available",
-        "feed": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto"
-    },
-    {
-        "id": 2,
-        "title": "The importance of REACT in the development",
-        "feed": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident"
-    },
-    {
-        "id": 3,
-        "title": "REACT developers going on strike",
-        "feed": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-    },
-    {
-        "id": 4,
-        "title": "Say what again. I dare you.",
-        "feed": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-    }
+﻿[
+  {
+    "id": 1,
+    "title": "Software Development Intern: Deutsche Telekom",
+    "guide": "Prikshit Gupta, Deutsche Telekom Digital Labs",
+    "feed": "This project aims to integrate the OneTV app of the company to include the meta-content enrichment service, which will facilitate us to provide explicit details regarding a particular movie to the end-users."
+  },
+  {
+    "id": 2,
+    "title": "Research Intern: Indraprastha Institute of Information Technology Delhi",
+    "guide": "Dr. Tavpritesh Sethi and Dr. PK",
+    "feed": "The research project aims to formulate a Nutrition Label Approach towards caluclating a Data Quality Label which inturns produces a comprehensive report and quality score to help adjudge the quality of data based on the “ingredients” of a dataset. "
+  },
+  {
+    "id": 3,
+    "title": "Research Intern: Siemens Technology and Services Pvt. Ltd.",
+    "guide": "Siva Prasad, Siemens Technology and Services Pvt. Ltd.",
+    "feed": "This internship included the deployment of EdgeX Foundry platform on Kubernetes at edge (K3s), using which supported the unification of different IoT devices working on different protocols under the same umbrella. "
+  },
+  {
+    "id": 4,
+    "title": "Object Recognition Software: Gun Recognition",
+    "guide": "Dr. Mahesh Babu, Samsung Group",
+    "feed": "Smart Object Recognition system that recognizes any type of gun using live video feed and sends security alert to the App."
+  },
+  {
+    "id": 5,
+    "title": "ASL Sign Language Recognition",
+    "guide": "Dr. Jainendra Shukla, Indraprastha Institute of Information Technology Delhi",
+    "feed": "The idea behind this research is to develop a Human-Computer Interface (HCI) that translates sign language supplied by the live video feed into language understandable by an amateur by converting the live video into text."
+  },
+  {
+    "id": 6,
+    "title": "“समाधान” Medical System",
+    "guide": "Dr. Ponnurangam Kumaraguru, Indraprastha Institute of Information Technology Delhi",
+    "feed": "The aim was to create a cryptographically secure user-friendly database system to collate medical history and link it to Aadhaar for further medical consultations. It will facilitate users to readily access and share their medical history and diagnostics with the concerned hospital for real-time reference instead of re-recording it at every institution."
+  },
+  {
+    "id": 7,
+    "title": "Full Stack Development: VentureSky",
+    "guide": "NSIT, E-Cell, Rishab Rawat",
+    "feed": "We developed the front-end and back-end of the management portal for pet training and management Institute as a Full-Stack web developer for VentureSky (start-up)."
+  }
 ]

@@ -17,6 +17,7 @@ const CVItem = ({row}) => {
     return(
         <div className="cvItem">
             <h3>{row.id}. {row.title}</h3>
+            <h4>Guide: {row.guide}</h4>
             <div>{row.feed}</div>
         </div>
     )

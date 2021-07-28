@@ -40,7 +40,7 @@ class App extends Component {
         <ItemList DB1= {this.state.FilteredDB1}> 
           News List 
         </ItemList>
-        <Footer Author= {this.state.author}
+        <Footer Author= {this.state.Author}
         />
       </>
     );
