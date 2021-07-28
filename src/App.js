@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Header from './components/header';
 import Footer from './components/footer'
+import Lifecycle from './components/lifecycle'
 import ItemList from './components/itemlist';
 import DB from './db.json';
 
@@ -14,7 +15,8 @@ class App extends Component {
     DB1: DB,
     FilteredDB1: DB,
     Author: "Sezal Chug",
-    keywords: ''
+    keywords: '',
+    lifecycle: true
   }
 
   inputHandler= (event) => {
@@ -36,10 +38,23 @@ class App extends Component {
         <div className="welcomenote">
           <h1>Welcome to the First Webpage!</h1>
         </div>
-        <Header inputfunctionCall= {this.inputHandler}/>
-        <ItemList DB1= {this.state.FilteredDB1}> 
+        {/* <Header inputfunctionCall= {this.inputHandler}/> */}
+        {/* <ItemList DB1= {this.state.FilteredDB1}> 
           News List 
-        </ItemList>
+        </ItemList> */}
+
+        <button
+          onClick = {() => this.setState({
+            lifecycle: !this.state.lifecycle
+          })}
+        >
+          SHOW LIFECYCLE
+        </button>
+
+        {this.state.lifecycle ? <Lifecycle /> : null}
+
+
+
         <Footer Author= {this.state.Author}
         />
       </>
